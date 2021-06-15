@@ -1,0 +1,150 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/motherboards",
+      "handler": "motherboard.find",
+      "config": {
+        "policies": []
+      }
+    }, 
+    {
+      "method": "GET",
+      "path": "/motherboards/count",
+      "handler": "motherboard.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/motherboards/:id",
+      "handler": "motherboard.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/motherboards",
+      "handler": "motherboard.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/motherboards/:id",
+      "handler": "motherboard.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/motherboards/:id",
+      "handler": "motherboard.delete",
+      "config": {
+        "policies": []
+      }
+    },
+
+
+    {
+      "method": "GET",
+      "path": "/crud_motherboard",
+      "handler": "motherboard.crudPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/crud_motherboard/add",
+      "handler": "motherboard.crud_addPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/crud_motherboard/add",
+      "handler": "motherboard.crud_add",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/crud_motherboard/edit/:id",
+      "handler": "motherboard.crud_editPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/crud_motherboard/update/",
+      "handler": "motherboard.crud_update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/crud_motherboard/delete/:id",
+      "handler": "motherboard.crud_delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/crud_motherboard",
+      "handler": "motherboard.crudPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/crud_motherboard/add",
+      "handler": "motherboard.crud_addPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/crud_motherboard/add",
+      "handler": "motherboard.crud_add",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/crud_motherboard/edit/:id",
+      "handler": "motherboard.crud_editPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/crud_motherboard/update/",
+      "handler": "motherboard.crud_update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/crud_motherboard/delete/:id",
+      "handler": "motherboard.crud_delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
