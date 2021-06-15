@@ -1,0 +1,100 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rams",
+      "handler": "ram.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/crud_ram",
+      "handler": "ram.crudPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/crud_ram/add",
+      "handler": "ram.crud_addPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/crud_ram/add",
+      "handler": "ram.crud_add",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/crud_ram/edit/:id",
+      "handler": "ram.crud_editPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/crud_ram/update/",
+      "handler": "ram.crud_update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/crud_ram/delete/:id",
+      "handler": "ram.crud_delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rams/count",
+      "handler": "ram.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rams/:id",
+      "handler": "ram.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rams",
+      "handler": "ram.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rams/:id",
+      "handler": "ram.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rams/:id",
+      "handler": "ram.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

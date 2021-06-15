@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cpus",
+  "info": {
+    "name": "CPU",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "core": {
+      "type": "string"
+    },
+    "socket_id": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "motherboard": {
+      "via": "cpus",
+      "collection": "motherboard"
+    },
+    "socket": {
+      "type": "string"
+    },
+    "GHz": {
+      "type": "string"
+    }
+  }
+}

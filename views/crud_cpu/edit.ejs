@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Edit Book</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container" style="margin-top: 50px">
+      <div class="card">
+        <div class="card-header">Edit cpu</div>
+        <div class="card-body">
+          <form action="/crud_cpu/update" method="post">
+            <div class="form-group">
+              <input
+                type="hidden"
+                class="form-control"
+                name="id"
+                value="<%= id %>"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <label>Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                name="name"
+                value="<%= name %>"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <label>Core:</label>
+              <input
+                type="text"
+                class="form-control"
+                name="core"
+                value="<%= core%>"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <label>image_url:</label>
+              <input
+                type="text"
+                class="form-control"
+                name="image_url"
+                value="<%= image_url %>"
+                autocomplete="off"
+              />
+            </div><div class="form-group">
+              <label>socket:</label>
+              <input
+                type="text"
+                class="form-control"
+                name="socket_id%"
+                value="<%= socket_id %>"
+                autocomplete="off"
+              />
+            </div><div class="form-group" >
+              <label>GHz:</label>
+              <input
+                type="text"
+                class="form-control"
+                name="GHz"
+                value="<%= GHz %>"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-info" value="Update" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

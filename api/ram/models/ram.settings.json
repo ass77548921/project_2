@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rams",
+  "info": {
+    "name": "Ram",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "clock_rate": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "motherboard": {
+      "via": "rams",
+      "collection": "motherboard",
+      "dominant": true
+    },
+    "type": {
+      "type": "string"
+    }
+  }
+}

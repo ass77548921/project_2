@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "motherboards",
+  "info": {
+    "name": "motherboard",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "cpu_type": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "case": {
+      "via": "motherboard",
+      "collection": "case",
+      "dominant": true
+    },
+    "cpus": {
+      "via": "motherboard",
+      "collection": "cpu",
+      "dominant": true
+    },
+    "rams": {
+      "via": "motherboard",
+      "collection": "ram"
+    },
+    "size": {
+      "type": "string"
+    },
+    "socket": {
+      "type": "string"
+    },
+    "ram_type": {
+      "type": "string"
+    }
+  }
+}
